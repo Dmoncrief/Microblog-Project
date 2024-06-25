@@ -71,13 +71,11 @@ color:#00ffff;
 /* Home Content */
 .home{
     height:100vh;
-    background: url('images/hands-touching-cyberpunk-concept-with-3424818') no-repeat;
     background-size: center;
     display:flex;
     align-items: center;
     padding:0 10%;
 }
-
 
 .home-content{
    max-width:600px;
@@ -308,25 +306,27 @@ background: #00ffff;
 /* Home image */
 
 .home-imgHover{
+    background: url("https://as1.ftcdn.net/v2/jpg/04/34/59/84/1000_F_434598465_hB1L77NjXpIDJEpkjNusHWgiur6wJyWq.jpg") no-repeat;
+    background-size: center;
     position:absolute;
-    top:0;
     right: 30px;
     width: 500px;
-    height: 100%;
-    background: transparent;
+    height: 500px;
     transition: 3s;
     animation: manipActiveHover .1s forwards;
     animation-delay: 4s;
     pointer-events: none;
+    z-index: 2 !important;
 
-
+/* Resize your image and find an image that works better for you. Make sure you get the URl of the image instead of putting the path to the image */
 }
 
 .home-imgHover:hover {
-    background: #081b29;
-    opacity: .8;
+    background: url("https://as1.ftcdn.net/v2/jpg/04/34/59/84/1000_F_434598465_hB1L77NjXpIDJEpkjNusHWgiur6wJyWq.jpg") no-repeat;
+    background-color: #081b29;
+    opacity: .5;
 }
-
+/* 
 .home-imgHover::after {
     content: '';
     position:absolute;
@@ -337,10 +337,9 @@ background: #00ffff;
     background:#081b29;
     animation:showRight 1s ease fowards;
     animation-delay: 3s;
-    z-index: 100;
 
     
-}
+} */
 
 
 
