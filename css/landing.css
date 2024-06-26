@@ -306,7 +306,7 @@ background: #00ffff;
 /* Home image */
 
 .home-imgHover{
-    background: url("https://as1.ftcdn.net/v2/jpg/04/34/59/84/1000_F_434598465_hB1L77NjXpIDJEpkjNusHWgiur6wJyWq.jpg") no-repeat;
+    background: url() no-repeat;
     background-size: center;
     position:absolute;
     right: 30px;
@@ -322,7 +322,7 @@ background: #00ffff;
 }
 
 .home-imgHover:hover {
-    background: url("https://as1.ftcdn.net/v2/jpg/04/34/59/84/1000_F_434598465_hB1L77NjXpIDJEpkjNusHWgiur6wJyWq.jpg") no-repeat;
+    background: url("") no-repeat;
     background-color: #081b29;
     opacity: .5;
 }

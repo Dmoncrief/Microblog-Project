@@ -29,12 +29,12 @@
           <input type="text" placeholder="Search">
         </div>
 
-
+      <div id="onlineUser">
         <div class="nav-user-icon online">
           <img src="images/random-profile.jpg">
 
         </div>
-
+      </div>
 
       </div>
     </nav>
@@ -63,101 +63,95 @@
     </div>
 
     <!-- main content -->
-    <div class="main-content">
+    <div class="container" id="postsBox" style="border: 2px solid #000 !important; width: 50%; margin-right: 150px;">
+        <h2>Posts</h2>
+        
+        <!-- Form to create a new post -->
+        <form class="post-form" id="postForm">
+            <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+            <button type="submit">Post</button>
+        </form>
 
-<div class="story-gallery">
-  <div class="story">
-    <ion-icon name="add-circle-sharp"></ion-icon>
-    <p>Post Story</p>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
+        <!-- Display existing posts -->
+        <div id="postsContainer">
+            <!-- Posts will be dynamically added here -->
+        </div>
     </div>
 
 
     <!-- right-sidebar -->
     <div class="right-sidebar">
-    <div class="sidebar-title">
-      <h4>Events</h4>
-      <a href="#">See All</a>
-    </div>
-
-    <div class="event">
-      <div class="left-event">
-        <h3>28</h3>
-        <span>June</span>
-
-      </div>
-      <div class="right-event">
-        <h4>Year Up</h4>
-        <p><ion-icon name="location-sharp"></ion-icon>Final Capstone 3</p>
-        <a href="#">More Info</a>
-
+      <div class="sidebar-title">
+        <h4>Events</h4>
+        <a href="#">See All</a>
       </div>
 
-    </div>
+      <div class="event">
+        <div class="left-event">
+          <h3>28</h3>
+          <span>June</span>
 
-    <div class="event">
-      <div class="left-event">
-        <h3>1</h3>
-        <span>August</span>
+        </div>
+        <div class="right-event">
+          <h4>Year Up</h4>
+          <p><ion-icon name="location-sharp"></ion-icon>Final Capstone 3</p>
+          <a href="#">More Info</a>
+
+        </div>
 
       </div>
-      <div class="right-event">
-        <h4>Year Up</h4>
-        <p><ion-icon name="location-sharp"></ion-icon>Interships</p>
-        <a href="#">More Info</a>
+     
+      <div class="event">
+        <div class="left-event">
+          <h3>1</h3>
+          <span>August</span>
+
+        </div>
+        <div class="right-event">
+          <h4>Year Up</h4>
+          <p><ion-icon name="location-sharp"></ion-icon>Interships</p>
+          <a href="#">More Info</a>
+
+        </div>
 
       </div>
 
-    </div>
+      <div class="sidebar-title">
+        <h4>Advertisement</h4>
+        <a href="#">Close</a>
 
-    <div class="sidebar-title">
-      <h4>Advertisement</h4>
-      <a href="#">Close</a>
-
-    </div>
-    <img src="" class="sidebar-ads">
-
-    <div class="sidebar-title">
-      <h4>Conversation</h4>
-      <a href="#">Hide Chat</a>
-
-    </div>
-
-    <div class="online-list">
-      <div class="online">
-        <img src="images/profile-woman.jpeg" alt="">
       </div>
-      <p> JSON Vorhees</p>
-    </div>
-    <div class="online-list">
-      <div class="online">
-        <img src="images/json-vor.jpeg" alt="">
+      <img src="" class="sidebar-ads">
+
+      <div class="sidebar-title">
+        <h4>Conversation</h4>
+        <a href="#">Hide Chat</a>
+
       </div>
-      <p> Binary_Freddy</p>
-    </div>
-    <div class="online-list">
-      <div class="online">
-        <img src="images/freddy-binary.jpeg" alt="">
+
+      <div class="online-list">
+        <div class="online">
+          <img src="images/profile-woman.jpeg" alt="">
+        </div>
+        <p> JSON Vorhees</p>
       </div>
-      <p> Laurie Strode</p>
+      <div class="online-list">
+        <div class="online">
+          <img src="images/json-vor.jpeg" alt="">
+        </div>
+        <p> Binary_Freddy</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="images/freddy-binary.jpeg" alt="">
+        </div>
+        <p> Laurie Strode</p>
+      </div>
     </div>
-</div>
 
 
   </div>
-</div>
+  </div>
 
 
 
@@ -203,6 +197,7 @@
   <!-- ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="scripts/posts.js"></script>
 </body>
 
 
