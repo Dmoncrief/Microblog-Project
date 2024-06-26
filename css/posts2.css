@@ -5,6 +5,11 @@
     font-family: sans-serif;
 }
 
+
+body{
+    background-color:rgb(13, 12, 12);
+}
+
 nav{
     height:70px;
     width:100%;
